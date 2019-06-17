@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/css/patternfly-additions.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{% static "placas/css/placas.css" %}">
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-pf" role="navigation">
+        <div class="navbar-header">
+            <div class="navbar-brand"><i class="fas fa-parking" style="margin-right: 5px"></i>Estacionamento inteligente</div>
+        </div>
+    </nav>
+
+    <div class="container page-content" style="margin-top: 10px">
+        <div class="upload-img-container">
+                <div style="width: 50%">
+                    <label for="select-plate-img">Choose a profile picture:</label>
+                    <input type="file" id="select-plate-img" name="select-plate-img" accept="image/png, image/jpeg">
+                </div>
+                <div style="width: 50%">
+                    <img id="plate-img" src="#" alt="">
+                    <div class="vehicle-info">
+                        <div class="info-title">Informações do veículo</div>
+                        <div class="client-info"><span>Cliente:</span><span class="client-content"></span></div>
+                        <div class="plate-info"><span>Placa:</span><span class="plate-content"></span></div>
+                        <div class="manufacturer-info"><span>Fabricante:</span><span class="manufacturer-content"></span></div>
+                        <div class="model-info"><span>Modelo:</span><span class="model-content"></span></div>
+                    </div>    
+                </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/patternfly/3.24.0/js/patternfly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"></script>
+
+    <script src="{% static "placas/js/index.js" %}"></script>
+</body>
+</html>

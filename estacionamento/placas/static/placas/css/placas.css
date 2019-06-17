@@ -1,0 +1,18 @@
+.upload-img-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.upload-img-container label{
+    margin-right: 5px;
+}
+
+.upload-img-container #plate-img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+}
+
+.upload-img-container .info-title{
+    font-weight: bold;
+}
