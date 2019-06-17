@@ -16,3 +16,11 @@
 .upload-img-container .info-title{
     font-weight: bold;
 }
+
+.send-img-file{
+    margin-top: 5px;
+}
+
+.vehicle-info > div > span:nth-of-type(2){
+    margin-left: 3px;
+}
